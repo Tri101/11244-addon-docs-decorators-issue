@@ -23,19 +23,6 @@ module.exports = {
 						cacheDirectory: true
 					}
 				}
-			},
-			{
-				test: /\.css$/,
-				include: /\/themes/,
-				use: [
-					{
-						loader: 'style-loader',
-						options: {
-							injectType: 'lazyStyleTag'
-						}
-					},
-					'css-loader'
-				]
 			}
 		]
 	}
