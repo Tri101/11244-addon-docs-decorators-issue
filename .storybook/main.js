@@ -15,7 +15,6 @@ module.exports = {
 					enforce: 'pre'
 				}
 			}
-		},
-		'@storybook/addon-toolbars'
+		}
 	]
 };

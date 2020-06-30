@@ -2,19 +2,19 @@ import MyButton from './Button.vue';
 
 const templateDecorator = () => ({
 	template: `
-<div style="background-color: gray;"><story/></div>
+<div style="background-color: silver; padding: 10px;"><story/></div>
 	`
 });
 
 export default {
-	title: 'Addon/Controls',
-	component: MyButton,
-	decorators: [
-		templateDecorator
-	],
 	argTypes: {
 		color: { control: { type: 'color' } },
 	},
+	component: MyButton,
+	decorators: [
+		templateDecorator // Comment this line out to make addon-docs work
+	],
+	title: 'Addon/Controls'
 };
 
 const ButtonStory = (args) => ({
